@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.controller.RepairJobsController">
+   <children>
+      <ButtonBar layoutX="159.0" layoutY="15.0" prefHeight="50.0" prefWidth="434.0">
+         <buttons>
+            <Button fx:id="customerBtn" minWidth="69.0" mnemonicParsing="false" onAction="#goCustomerView" prefHeight="26.0" text="Customer" />
+            <Button fx:id="propertiesBtn" minWidth="69.0" mnemonicParsing="false" onAction="#goPropertyView" prefHeight="26.0" text="Properties" />
+            <Button fx:id="repairJobsBtn" minWidth="69.0" mnemonicParsing="false" onAction="#goRepairJobsView" prefHeight="26.0" prefWidth="125.0" text="Repair Jobs" />
+            <Button fx:id="manager" minWidth="62.0" mnemonicParsing="false" onAction="#goReportView" prefHeight="26.0" text="Report" />
+         </buttons>
+      </ButtonBar>
+      <Text layoutX="29.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QProperty">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="about" layoutX="21.0" layoutY="441.0" mnemonicParsing="false" onAction="#about" text="About" />
+      <Button fx:id="exitButtonClick" layoutX="75.0" layoutY="441.0" mnemonicParsing="false" onAction="#exitButtonClick" text="Exit" />
+      <TextArea fx:id="resultList" layoutX="29.0" layoutY="105.0" prefHeight="223.0" prefWidth="260.0" />
+      <Text layoutX="36.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repair Booking List" />
+      <Text layoutX="342.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repair Jobs ID" />
+      <Text layoutX="355.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="345.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Date" />
+      <Text layoutX="324.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Completion Date " />
+      <TextField fx:id="repairId" layoutX="433.0" layoutY="87.0" />
+      <TextField fx:id="description" layoutX="434.0" layoutY="124.0" />
+      <DatePicker fx:id="completionDate" layoutX="435.0" layoutY="196.0" prefHeight="26.0" prefWidth="150.0" />
+      <Text layoutX="376.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charge" />
+      <TextField fx:id="charge" layoutX="434.0" layoutY="238.0" promptText="\$$$$$" />
+      <Text layoutX="352.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Type" />
+      <Button fx:id="addProperty" layoutX="370.0" layoutY="428.0" mnemonicParsing="false" onAction="#addRepairJob" text="Add Bookings " />
+      <Button fx:id="updateProperty" layoutX="474.0" layoutY="423.0" mnemonicParsing="false" onAction="#updateBookings" prefHeight="30.0" prefWidth="122.0" text="Update Bookings" />
+      <Button fx:id="deleteProperty" layoutX="249.0" layoutY="425.0" mnemonicParsing="false" onAction="#deleteJobs" prefHeight="30.0" prefWidth="105.0" text="Cancel Job" />
+      <MenuButton fx:id="jobType" layoutX="456.0" layoutY="329.0" mnemonicParsing="false" text="Job Type">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <Button fx:id="searchBookings" layoutX="27.0" layoutY="342.0" mnemonicParsing="false" onAction="#search" text="Search Bookings " />
+      <Button fx:id="viewBookings" layoutX="29.0" layoutY="381.0" mnemonicParsing="false" onAction="#getAllRepairJobs" text="View all bookings" />
+      <TextField fx:id="jobId" layoutX="148.0" layoutY="342.0" prefHeight="26.0" prefWidth="142.0" promptText="Repair Jobs ID" />
+      <DatePicker fx:id="bookingDate" layoutX="433.0" layoutY="157.0" prefHeight="26.0" prefWidth="150.0" />
+      <Text layoutX="346.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Name" />
+      <MenuButton fx:id="staffName" layoutX="456.0" layoutY="294.0" mnemonicParsing="false" text="Staff Name">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="addressMenu" layoutX="456.0" layoutY="370.0" mnemonicParsing="false" text="Address">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <Text layoutX="347.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+   </children>
+</AnchorPane>

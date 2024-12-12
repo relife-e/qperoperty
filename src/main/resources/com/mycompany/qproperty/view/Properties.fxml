@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.controller.PropertiesController">
+   <children>
+      <MenuButton fx:id="assignCustomer" layoutX="456.0" layoutY="238.0" mnemonicParsing="false" text="Assign Customer">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <ButtonBar layoutX="159.0" layoutY="15.0" prefHeight="50.0" prefWidth="434.0">
+         <buttons>
+            <Button fx:id="customerBtn" minWidth="69.0" mnemonicParsing="false" onAction="#goCustomerView" prefHeight="26.0" text="Customer" />
+            <Button fx:id="propertiesBtn" minWidth="69.0" mnemonicParsing="false" onAction="#goPropertyView" prefHeight="26.0" text="Properties" />
+            <Button fx:id="repairJobsBtn" minWidth="69.0" mnemonicParsing="false" onAction="#goRepairJobsView" prefHeight="26.0" prefWidth="125.0" text="Repair Jobs" />
+            <Button fx:id="manager" minWidth="62.0" mnemonicParsing="false" onAction="#goReportView" prefHeight="26.0" text="Report" />
+         </buttons>
+      </ButtonBar>
+      <Text layoutX="29.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QProperty">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="about" layoutX="29.0" layoutY="426.0" mnemonicParsing="false" onAction="#about" text="About" />
+      <Button fx:id="exit" layoutX="84.0" layoutY="426.0" mnemonicParsing="false" onAction="#exitButtonClick" text="Exit" />
+      <TextArea fx:id="resultList" layoutX="29.0" layoutY="105.0" prefHeight="223.0" prefWidth="260.0" />
+      <Text layoutX="36.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Property List" />
+      <Text layoutX="355.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <Text layoutX="345.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+      <Text layoutX="349.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build Year" />
+      <TextField fx:id="address" layoutX="434.0" layoutY="124.0" />
+      <TextField fx:id="description" layoutX="435.0" layoutY="158.0" />
+      <DatePicker fx:id="buildYear" layoutX="435.0" layoutY="196.0" prefHeight="26.0" prefWidth="150.0" />
+      <Text layoutX="318.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Managing Agent" />
+      <Text layoutX="314.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Customer" wrappingWidth="95.20000000000005" />
+      <Text layoutX="334.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Property Type" />
+      <Button fx:id="addProperty" layoutX="332.0" layoutY="371.0" mnemonicParsing="false" onAction="#addProperty" text="Add Property" />
+      <MenuButton fx:id="propertyType" layoutX="456.0" layoutY="329.0" mnemonicParsing="false" text="Propety Type">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Button fx:id="searchProperty" layoutX="36.0" layoutY="371.0" mnemonicParsing="false" onAction="#search" text="Search Property" />
+      <TextField fx:id="addSearch" layoutX="36.0" layoutY="338.0" promptText="Enter address to search" />
+      <MenuButton fx:id="managingAgent" layoutX="456.0" layoutY="282.0" mnemonicParsing="false" text="Select Agent">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

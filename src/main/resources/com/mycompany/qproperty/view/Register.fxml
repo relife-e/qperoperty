@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="246.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.controller.RegisterController">
+   <children>
+      <Text layoutX="78.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="19.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
+      <Text layoutX="23.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="23.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text layoutX="21.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="21.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+      <TextField fx:id="fName" layoutX="84.0" layoutY="78.0" />
+      <TextField fx:id="lName" layoutX="85.0" layoutY="116.0" />
+      <TextField fx:id="passWord" layoutX="85.0" layoutY="196.0" />
+      <TextField fx:id="email" layoutX="85.0" layoutY="237.0" />
+      <TextField fx:id="userName" layoutX="85.0" layoutY="158.0" />
+      <Button fx:id="back" layoutX="27.0" layoutY="326.0" mnemonicParsing="false" onAction="#backBtn" text="Back" />
+      <Button fx:id="registerUser" layoutX="23.0" layoutY="282.0" mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="214.0" text="Register User" />
+   </children>
+</AnchorPane>

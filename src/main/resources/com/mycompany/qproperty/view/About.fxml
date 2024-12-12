@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qproperty.controller.AboutController">
+   <children>
+      <TextArea layoutX="4.0" layoutY="14.0" prefHeight="373.0" prefWidth="592.0" text="Hello Welcome to QProperty Application.&#10;First User have to login to use this application.&#10;&#10;What to do in Customer Window?&#10;Customer ID is automatically generated. &#10;Here user can search customer using last name or phone number&#10;User can display all the customer data and add new customer&#10;User must specify the correct customer Id to update the customer value&#10;&#10;What to do in Properties Window?&#10;Here, user can add new property details&#10;Furthermore, user can search for a property by inputing correct address&#10;&#10;What to do in Repair Jobs window?&#10;Here, user can add bookings&#10;cancle or delete bookings by specifying the correct Repair Job Id,&#10;Similarly, user can search for specific job id by entering Repair Job Id, which is located besides it buttons&#10;Furthermore, user can view all the bookings as well&#10;&#10;What to do in Report Window&#10;Here user can view the min , max, average and bargraph when user clicks the view button." />
+      <Button layoutX="38.0" layoutY="387.0" mnemonicParsing="false" onAction="#menu" text="Menu" />
+   </children>
+</Pane>
